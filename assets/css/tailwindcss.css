@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*! tailwindcss v2.2.7 | MIT License | https://tailwindcss.com */
 
@@ -59,16 +59,7 @@ Improve consistency of default fonts in all browsers. (https://github.com/sindre
 */
 
 body {
-  font-family:
-		system-ui,
-		-apple-system, /* Firefox supports this but not yet `system-ui` */
-		'Segoe UI',
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji';
+font-family: 'Vazirmatn', sans-serif;
 }
 
 /*
@@ -1286,7 +1277,7 @@ video {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+font-family: 'Vazirmatn', sans-serif;
 }
 
 h1,
@@ -1321,9 +1312,8 @@ p {
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
-.collapse.show{
-  display: block;
-}
+
+
 
 .sticky .toggler-icon{
   --tw-bg-opacity: 1;
@@ -1792,6 +1782,14 @@ p {
   }
 }
 /* Start custom CSS */
+.collapse.show{
+  display: block;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 100px;
+}
 .header-hero-content{
   display: flex;
   justify-content: center;
@@ -1807,5 +1805,36 @@ p {
 }
 .link li a{
   margin-left: 0.5rem;
+  margin-bottom: 0px;
+}
+.section-title{
+   font-size: 22px;
+   white-space: 2px;
+   position: relative;
+}
+.about-us-title{
+  position: relative;
+}
+.about-us-title::before{
+  content: "";
+  position: absolute;
+  width: 38%;
+  top:0px;
+  right: 0rem;
+  height: 5px;
+  border-radius: 8px;
+background: linear-gradient(148deg, rgba(254,132,100,1) 0%, rgba(254,110,154,1) 100%);
+}
+@media(max-width:1023px){
+  #nav{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column-reverse;
+  font-weight: bold;
+  font-size: 20px;
+}
 }
 /* End custom CSS */
